@@ -456,19 +456,61 @@ L_{\text{mlm}} = -\sum x_i \log\big(p(x_i \mid x_{-i})\big)
 \end{equation}
 
 \subsection{DistilBERT and its Key Methodologies}
-DistilBERT is a streamlined version of the BERT (Bidirectional Encoder Representations from Transformers) model, designed to enhance efficiency in natural language processing tasks. It achieves this through several key methodologies:
+DistilBERT is a streamlined version of the BERT (Bidirectional Encoder Representations from Transformers) model, designed to enhance efficiency in natural language processing tasks. It reduces BERT’s size by 40\%, offers 60\% faster inference, and is 71\% faster on mobile applications. Despite being compact, it retains 97\% of BERT’s accuracy, making it an effective alternative to BERT. It achieves this through several key methodologies:
 \subsubsection{Knowledge Distillation}
 Knowledge distillation is a model compression technique where a smaller model (the student) is trained to replicate the behavior of a larger, pre-trained model (the teacher). In the case of DistilBERT, the BERT model serves as the teacher. The student model learns to predict the output probabilities of the teacher, capturing the nuanced information learned by the larger model. This process enables the student model to achieve high performance with reduced complexity.
 
-\subsubsection{Triple Loss Function}
-To effectively train the student model, DistilBERT employs a triple loss function that combines:
+\subsubsection{Loss Functions in DistilBERT}
 \begin{enumerate}
-    \item \textbf{Language Modeling Loss:} Encourages the model to predict masked words in a sentence, similar to BERT's original training objective.
-    \item \textbf{Distillation Loss:} Aligns the student model's output distribution with that of the teacher model, ensuring the student mimics the teacher's behavior.
-    \item \textbf{Cosine Distance Loss:} Minimizes the difference between the hidden states of the teacher and student models, promoting similarity in their internal representations.
+    \item \textbf{Distillation Loss (KL Divergence Loss)}
+    Distillation hello  loss is essential in training the student model during knowledge distillation. It's calculated by comparing the student's prediction probability to the soft probabilities provided by the teacher model. The soft probabilities for the student model are computed as:\\
+    \[
+(y_S^T)_i = \frac{\exp((z_S)_i/T)}{\sum_j \exp((z_S)_j/T)}
+\]
+    The distillation loss is then calculated as:\\
+    \[
+\mathcal{L}_{KD} = \alpha T^2 * \mathcal{L}_{CE}(y_T^T, y_S^T) + (1 - \alpha) * \mathcal{L}_{CE}(y_S, y_{true})
+\]
+
+where:
+\textbf{temperature T} smooths the probability distribution, making it easier for the student model to learn
+ 	L(CE)  KL divergence is used as the loss function to measure the difference between the teacher’s and student’s probability distributions.
+\item \textbf{Masked Language Modeling (MLM) Loss}\\
+Like BERT, DistilBERT learns language patterns using masked language modeling (MLM). In this approach, some words in a sentence are randomly replaced with a special token, and the model predicts these masked words based on surrounding context. The loss is computed as:\\
+\[
+\mathcal{L}_{MLM} = \sum -y_{true} \log(y_S)
+\]
+
+\item \textbf{Cosine embedding loss}
+Cosine embedding loss helps the student model match the teacher model’s embeddings by minimizing their cosine distance, preserving knowledge while reducing model size. Cosine similarity is defined as:\\
+\[
+\cos(\mathbf{x_1}, \mathbf{x_2}) = \frac{\mathbf{x_1} \cdot \mathbf{x_2}}{\|\mathbf{x_1}\| \|\mathbf{x_2}\|}
+\]
+The Cosine embedding loss is computed as:
+\[
+\mathcal{L}_{cos}(\mathbf{x_1}, \mathbf{x_2}) = 1 - \cos(\mathbf{x_1}, \mathbf{x_2})
+\]
+To effectively train the student model, DistilBERT employs a triple loss function that combines Distillation loss, MLM loss and Cosine embedding loss. The final training loss function is a weighted sum of the three loss components:\\
+\[
+\mathcal{L} = \alpha_d T^2 * \mathcal{L}_{dist} + \alpha_{mlm} * \mathcal{L}_{MLM} + \alpha_{cos} * \mathcal{L}_{cos}
+\]
+
+The following hyperparameter values were used during the training of DistilBERT:\\
+Temperature (T) = 2.0\\
+Distillation weight () = 5.0\\
+MLM loss weight () = 2.0\\
+Cosine loss weight () = 1\\
+
+
 \end{enumerate}
 
-This combination ensures that the distilled model retains the essential knowledge and performance capabilities of the original BERT model.
+\subsection{DistilBERT Architecture}
+DistilBERT reduces the number of layers to 6 from 12 in the original BERT architecture, resulting in a model with 66M parameters. This reduction leads to a 60\% increase in inference speed while maintaining approximately 97\% of BERT's language understanding capabilities.\\
+
+
+
+In the context of developing efficient natural language processing models for the Nepali language, DistilBERT emerges as a compelling choice due to its reduced model size and computational efficiency. A study titled "Nepali Encoder Transformers: An Analysis of Auto Encoding Transformer Language Models for Nepali Text Classification" highlights the advantages of using smaller transformer models like DistilBERT. The research emphasizes that such models are particularly beneficial for low-resource languages like Nepali, where computational resources may be limited. By employing DistilBERT, which maintains a balance between performance and efficiency, it becomes feasible to develop robust language models without the need for extensive computational infrastructure.
+
 
 \subsubsection{Architecture Modification}
 DistilBERT reduces the number of layers in the original BERT architecture by half, resulting in a model with 40\% fewer parameters. This reduction leads to a 60\% increase in inference speed while maintaining approximately 97\% of BERT's language understanding capabilities. The streamlined architecture makes DistilBERT more suitable for deployment in resource-constrained environments.
