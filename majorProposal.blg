@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: majorProposal.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: majorReference.bib
+Warning--entry type for "dz6s-my90-19" isn't style-file defined
+--line 37 of file majorReference.bib
+Warning--I didn't find a database entry for "goyal_2021"
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in suwal2023nepali
+
+Done.
+You've used 10 entries,
+            4087 wiz_defined-function locations,
+            876 strings with 9523 characters,
+and the built_in function-call counts, 7174 in all, are:
+= -- 538
+> -- 170
+< -- 50
++ -- 93
+- -- 30
+* -- 333
+:= -- 1028
+add.period$ -- 21
+call.type$ -- 10
+change.case$ -- 9
+chr.to.int$ -- 126
+cite$ -- 11
+duplicate$ -- 523
+empty$ -- 637
+format.name$ -- 37
+if$ -- 1681
+int.to.chr$ -- 0
+int.to.str$ -- 10
+missing$ -- 93
+newline$ -- 57
+num.names$ -- 9
+pop$ -- 255
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 558
+stack$ -- 0
+substring$ -- 319
+swap$ -- 396
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 10
+warning$ -- 1
+while$ -- 30
+width$ -- 12
+write$ -- 111
+(There were 3 warnings)
