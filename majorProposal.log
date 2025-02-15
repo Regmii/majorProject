@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.20)  14 FEB 2025 17:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.20)  15 FEB 2025 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,7 +521,7 @@ nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `english'. on input line 83.
-<images/logo.png, id=200, 102.3825pt x 102.3825pt>
+<images/logo.png, id=205, 102.3825pt x 102.3825pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 85.
@@ -581,7 +581,7 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [2]
 [3]
-<images/gantt.png, id=332, 885.3075pt x 524.96124pt>
+<images/gantt.png, id=337, 885.3075pt x 524.96124pt>
 File: images/gantt.png Graphic file (type png)
 <use images/gantt.png>
 Package pdftex.def Info: images/gantt.png  used on input line 307.
@@ -600,12 +600,12 @@ Chapter 2.
 
 ] [7]
 Chapter 3.
-<images/methodology.png, id=357, 1749.53625pt x 921.4425pt>
+<images/methodology.png, id=362, 1749.53625pt x 921.4425pt>
 File: images/methodology.png Graphic file (type png)
 <use images/methodology.png>
 Package pdftex.def Info: images/methodology.png  used on input line 332.
 (pdftex.def)             Requested size: 402.38487pt x 211.92732pt.
-<images/1.png, id=359, 661.47125pt x 557.08125pt>
+<images/1.png, id=364, 661.47125pt x 557.08125pt>
 File: images/1.png Graphic file (type png)
 <use images/1.png>
 Package pdftex.def Info: images/1.png  used on input line 341.
@@ -624,13 +624,13 @@ Overfull \hbox (1.26633pt too wide) in paragraph at lines 337--344
 [8
 
  <./images/methodology.png>] [9 <./images/1.png>]
-<images/2.png, id=371, 595.22375pt x 576.1525pt>
+<images/2.png, id=376, 595.22375pt x 576.1525pt>
 File: images/2.png Graphic file (type png)
 <use images/2.png>
 Package pdftex.def Info: images/2.png  used on input line 349.
 (pdftex.def)             Requested size: 386.89085pt x 374.49467pt.
  [10 <./images/2.png>]
-<images/3.png, id=377, 652.4375pt x 580.1675pt>
+<images/3.png, id=382, 652.4375pt x 580.1675pt>
 File: images/3.png Graphic file (type png)
 <use images/3.png>
 Package pdftex.def Info: images/3.png  used on input line 357.
@@ -641,7 +641,7 @@ Overfull \hbox (7.24646pt too wide) in paragraph at lines 357--358
  []
 
 [11 <./images/3.png>]
-<images/meth.png, id=383, 1659.19875pt x 1288.815pt>
+<images/meth.png, id=388, 1659.19875pt x 1288.815pt>
 File: images/meth.png Graphic file (type png)
 <use images/meth.png>
 Package pdftex.def Info: images/meth.png  used on input line 369.
@@ -652,144 +652,143 @@ Overfull \hbox (7.17117pt too wide) in paragraph at lines 373--375
 "VI-O-LENCE" and "PRO-
  []
 
-<images/svm.png, id=385, 566.115pt x 278.03876pt>
+<images/svm.png, id=390, 566.115pt x 278.03876pt>
 File: images/svm.png Graphic file (type png)
 <use images/svm.png>
 Package pdftex.def Info: images/svm.png  used on input line 381.
 (pdftex.def)             Requested size: 367.97038pt x 180.72304pt.
 [12 <./images/meth.png>] [13 <./images/svm.png>]
-Overfull \hbox (3.17552pt too wide) in paragraph at lines 390--392
+<images/adaboost.png, id=403, 725.71124pt x 384.43625pt>
+File: images/adaboost.png Graphic file (type png)
+<use images/adaboost.png>
+Package pdftex.def Info: images/adaboost.png  used on input line 409.
+(pdftex.def)             Requested size: 362.85474pt x 192.21765pt.
+ [14]
+Overfull \hbox (3.17552pt too wide) in paragraph at lines 417--419
 \OT1/ptm/m/n/12 Word2Vec op-er-ates us-ing two pri-mary ar-chi-tec-tures: Con-t
 in-u-ous Bag of Words (CBOW)
  []
 
-[14] [15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 465--467
-
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 469--471
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 478--480
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 484--486
-
- []
-
-
+[15 <./images/adaboost.png>] [16] [17] [18]
 Underfull \hbox (badness 10000) in paragraph at lines 492--494
 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 498--503
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
+Underfull \hbox (badness 10000) in paragraph at lines 505--507
 
  []
 
-[19] [20] [21]
-Overfull \hbox (6.55156pt too wide) in paragraph at lines 534--534
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 511--513
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--521
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
+
+ []
+
+[20] [21] [22]
+Overfull \hbox (6.55156pt too wide) in paragraph at lines 561--561
 |[]\OT1/ptm/b/n/14 SONAR(Sentence-Level Mul-ti-modal and Language-Agnostic Rep-
 
  []
 
-
-Overfull \hbox (5.70692pt too wide) in paragraph at lines 543--544
+[23]
+Overfull \hbox (5.70692pt too wide) in paragraph at lines 570--571
 \OT1/ptm/m/n/12 SONAR trans-forms text and speech into em-bed-dings us-ing a Tr
 ansformer-based encoder-
  []
 
-[22] [23] [24] [25]
-<incremental.png, id=484, 295.8252pt x 159.4758pt>
+[24] [25] [26]
+<incremental.png, id=493, 295.8252pt x 159.4758pt>
 File: incremental.png Graphic file (type png)
 <use incremental.png>
-Package pdftex.def Info: incremental.png  used on input line 627.
+Package pdftex.def Info: incremental.png  used on input line 654.
 (pdftex.def)             Requested size: 384.5727pt x 207.3185pt.
- [26 <./incremental.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 645--661
+ [27] [28 <./incremental.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 672--688
 
  []
 
-[27]
-<images/usecase.png, id=499, 815.29594pt x 688.82344pt>
+[29]
+<images/usecase.png, id=514, 815.29594pt x 688.82344pt>
 File: images/usecase.png Graphic file (type png)
 <use images/usecase.png>
-Package pdftex.def Info: images/usecase.png  used on input line 666.
+Package pdftex.def Info: images/usecase.png  used on input line 693.
 (pdftex.def)             Requested size: 407.64697pt x 344.41087pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28]
-<images/dfd.png, id=504, 1990.43625pt x 454.69875pt>
+ [30 <./images/usecase.png>]
+<images/dfd.png, id=521, 1990.43625pt x 454.69875pt>
 File: images/dfd.png Graphic file (type png)
 <use images/dfd.png>
-Package pdftex.def Info: images/dfd.png  used on input line 673.
+Package pdftex.def Info: images/dfd.png  used on input line 700.
 (pdftex.def)             Requested size: 418.00395pt x 95.48955pt.
 
-Overfull \hbox (1.17107pt too wide) in paragraph at lines 673--674
+Overfull \hbox (1.17107pt too wide) in paragraph at lines 700--701
  [][] 
  []
 
-[29 <./images/usecase.png> <./images/dfd.png>]
+[31 <./images/dfd.png>]
 Chapter 4.
-<images/confusion.png, id=511, 450.9347pt x 386.94562pt>
+<images/confusion.png, id=527, 450.9347pt x 386.94562pt>
 File: images/confusion.png Graphic file (type png)
 <use images/confusion.png>
-Package pdftex.def Info: images/confusion.png  used on input line 687.
+Package pdftex.def Info: images/confusion.png  used on input line 714.
 (pdftex.def)             Requested size: 225.4668pt x 193.47234pt.
 
-Overfull \hbox (0.83482pt too wide) in paragraph at lines 692--693
+Overfull \hbox (0.83482pt too wide) in paragraph at lines 719--720
 \OT1/ptm/m/n/12 cap-tur-ing the se-man-tics within the classes. Other en-coders
  such as Fast-text, and GLOVE
  []
 
-[30
+[32
 
- <./images/confusion.png>] [31] (./majorProposal.bbl
+ <./images/confusion.png>] [33] (./majorProposal.bbl
 Overfull \hbox (68.22527pt too wide) in paragraph at lines 32--35
 \OT1/ptm/m/n/12 panos-[]releases-[]second-[]media-[]monitoring-[]report-[]on-[]
 online-[]gendered-[]violence-[]against-[]women/$[] 
  []
 
-[32
+[34
 
 ])
 
-LaTeX Warning: Citation `goyal_2021' undefined on input line 754.
+LaTeX Warning: Citation `goyal_2021' undefined on input line 781.
 
-[33] (./majorProposal.aux)
+[35] (./majorProposal.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-Package rerunfilecheck Warning: File `majorProposal.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `majorProposal.out':
-(rerunfilecheck)             Before: 36E68F7FFB62A8536413899EAE515C30;8150
-(rerunfilecheck)             After:  D517C638BE4A3547A374E38850B552FF;8330.
+Package rerunfilecheck Info: File `majorProposal.out' has not changed.
+(rerunfilecheck)             Checksum: 63B87E2496D44F31CE7EBA01B736D71C;8330.
  ) 
 Here is how much of TeX's memory you used:
- 16387 strings out of 480204
- 302978 string characters out of 5895010
- 585155 words of memory out of 5000000
- 33975 multiletter control sequences out of 15000+600000
- 491609 words of font info for 72 fonts, out of 8000000 for 9000
+ 16400 strings out of 480204
+ 303199 string characters out of 5895010
+ 585220 words of memory out of 5000000
+ 33984 multiletter control sequences out of 15000+600000
+ 491612 words of font info for 72 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 75i,11n,82p,1403b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 75i,11n,82p,1403b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/
@@ -802,10 +801,10 @@ y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on majorProposal.pdf (40 pages, 998051 bytes).
+Output written on majorProposal.pdf (42 pages, 1096233 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 525 compressed objects within 6 object streams
- 141 named destinations out of 1000 (max. 500000)
- 453 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 635 PDF objects out of 1000 (max. 8388607)
+ 536 compressed objects within 6 object streams
+ 144 named destinations out of 1000 (max. 500000)
+ 466 words of extra memory for PDF output out of 10000 (max. 10000000)
 

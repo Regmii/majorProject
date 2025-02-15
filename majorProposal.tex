@@ -383,6 +383,33 @@ In the context of hate speech detection, the SVM algorithm aims to segregate hat
 \textit{Source:https://www.dtreg.com/solution/support-vector-machines}
 \end{figure}
 
+\subsubsection{AdaBoost}
+AdaBoost is a type of ensemble learning technique that operates iteratively, capitalizing on the errors of weak classifiers and amplifies their capabilities to mold them into potent classifiers. The essence of AdaBoost lies in its ability to combine several weak classifiers, enhancing the ones that showcase superior performance through higher weight assignments.    
+
+AdaBoost refers to a particular method of training a boosted classifier. A boosted classifier is a classifier of the form
+
+\[
+F_T(x) = \sum_{t=1}^{T} f_t(x)
+\]
+
+where each \( f_t \) is a weak learner that takes an object \( x \) as input and returns a value indicating the class of the object. For example, in the two-class problem, the sign of the weak learner's output identifies the predicted object class and the absolute value gives the confidence in that classification.
+
+Each weak learner produces an output hypothesis \( h \) which fixes a prediction \( h(x_i) \) for each sample in the training set. At each iteration \( t \), a weak learner is selected and assigned a coefficient \( \alpha_t \) such that the total training error \( E_t \) of the resulting \( t \)-stage boosted classifier is minimized.
+
+\[
+E_t = \sum_{i} E \big[ F_{t-1}(x_i) + \alpha_t h(x_i) \big]
+\]
+
+Here \( F_{t-1}(x) \) is the boosted classifier that has been built up to the previous stage of training and 
+\( f_t(x) = \alpha_t h(x) \) is the weak learner that is being considered for addition to the final classifier.
+
+In the context of hate speech detection, the AdaBoost algorithm tries to improve classification by combining multiple simple models (weak learners) to create a stronger one. It works by focusing more on mistakes—if a weak model misclassifies some hate speech, the next model pays more attention to those errors. This way, each new model improves upon the previous one. AdaBoost creates a decision boundary that becomes more refined and accurate after several iterations, making it better at hate speech detection.
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{images/adaboost.png}
+\caption{AdaBoost}
+\end{figure}
+
 \subsection{Word2Vec}
 Word2Vec is a neural network-based algorithm used to generate vector representations of words, capturing their semantic relationships within a text corpus. Word2Vec maps words into a continuous vector space where semantically similar words are positioned closer together. This results in dense word embeddings that effectively represent both syntactic and semantic properties of words.
 
