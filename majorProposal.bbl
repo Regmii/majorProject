@@ -49,6 +49,23 @@ H.~Mulki, H.~Haddad, C.~B. Ali, and H.~Alshabani, ``L-hsab: A levantine twitter
   dataset for hate speech and abusive language,'' in \emph{Proceedings of the
   third workshop on abusive language online}, 2019, pp. 111--118.
 
+\bibitem{distil}
+\BIBentryALTinterwordspacing
+U.~Maskey, M.~Bhatta, S.~Bhatt, S.~Dhungel, and B.~K. Bal, ``{N}epali encoder
+  transformers: An analysis of auto encoding transformer language models for
+  {N}epali text classification,'' in \emph{Proceedings of the 1st Annual
+  Meeting of the ELRA/ISCA Special Interest Group on Under-Resourced
+  Languages}, M.~Melero, S.~Sakti, and C.~Soria, Eds.\hskip 1em plus 0.5em
+  minus 0.4em\relax Marseille, France: European Language Resources Association,
+  Jun. 2022, pp. 106--111. [Online]. Available:
+  \url{https://aclanthology.org/2022.sigul-1.14/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{devo}
+C.~Qiu, L.~Jiang, and G.~Kong, ``A differential evolution-based method for
+  class-imbalanced cost-sensitive learning,'' in \emph{2015 International Joint
+  Conference on Neural Networks (IJCNN)}, 2015, pp. 1--8.
+
 \bibitem{singh2020aspect}
 O.~M. Singh, S.~Timilsina, B.~K. Bal, and A.~Joshi, ``Aspect based abusive
   sentiment detection in nepali social media texts,'' in \emph{2020 IEEE/ACM

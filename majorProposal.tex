@@ -320,8 +320,11 @@ Paper, "Named-entity based sentiment analysis of Nepali news media texts", scrap
 
 Hate speech and abusive language have become a common phenomenon on Arabic social media. Automatic hate speech and abusive detection systems can facilitate the prohibition of toxic textual contents. The complexity, informality, and ambiguity of the Arabic dialects hindered the provision of the needed resources for Arabic abusive/hate speech detection research. The paper, "L-hsab: A levantine twitter dataset for hate speech and abusive language" introduces the first publicly-available Levantine Hate Speech and Abusive (L-HSAB) Twitter dataset with Krippen-dorff’s /alpha value 76.5\% \cite{mulki2019hsab}. The dataset consists of 5,846 tweets, labeled as Hate, Abusive, or Normal. To ensure a reliable annotation process, the authors provided clear guidelines, inter-annotator agreement metrics, and conducted evaluations to establish the dataset's consistency. Machine learning classifiers such as Naive Bayes and SVM were tested, with Naive Bayes achieving better results in both binary and multi-class classification tasks. Naive Bayes from NLTK achieved an average of 82\% F1-score among Hate and Abusive class. Both classifiers were trained with several n-gram schemes with Term frequency weighting. 
 
-In their 2022 study, Maskey et al. conducted a comparative analysis of Transformer-based language models for Nepali text classification, focusing on DistilBERT, DeBERTa, and XLM-RoBERTa. The research aimed to identify effective strategies for pre-training and fine-tuning these models within the context of a low-resource language. The models were evaluated on a downstream classification task using the "16 Nepali News" dataset, which comprises approximately 14,364 news documents categorized into 16 distinct groups.
+In their 2022 study \cite{distil}, Maskey et al. conducted a comparative analysis of Transformer-based language models for Nepali text classification, focusing on DistilBERT, DeBERTa, and XLM-RoBERTa. The research aimed to identify effective strategies for pre-training and fine-tuning these models within the context of a low-resource language. The models were evaluated on a downstream classification task using the "16 Nepali News" dataset, which comprises approximately 14,364 news documents categorized into 16 distinct groups.
 The findings revealed that all models surpassed the baseline accuracy of 80\%. DeBERTa achieved the highest accuracy at 88.93\%, highlighting the significance of training domain-adapted language models. DistilBERT attained a respectable accuracy of 88.31\% with the least number of training steps, implying faster training for downstream tasks. The marginal performance difference compared to DeBERTa, combined with its smaller and lighter architecture, makes DistilBERT particularly well-suited for deployment in production environments with computational constraints. This study underscores the potential of leveraging efficient Transformer models like DistilBERT for low-resource languages, providing a foundation for future NLP research and applications in Nepali.
+
+The paper “A Differential Evolution-Based Method for Class-Imbalanced Cost-Sensitive Learning” explores the use of Differential Evolution to address class imbalance in machine learning \cite{devo}. Traditional resampling techniques like Random undersampling and Synthetic Minority Over-Sampling Technique (SMOTE) are commonly used to balance datasets, but they often lead to loss of important information or overfitting. To overcome these limitations, the study proposes a DE-based under-sampling approach that optimizes the selection of majority class examples while minimizing misclassification costs.
+Differential Evolution efficiently searches for an optimal subset of majority class examples that maintains useful information and improves classification performance. The method was evaluated on 22 class-imbalanced datasets, demonstrating superior performance over random undersmapling and SMOTE, particularly in scenarios with high cost ratios. The study highlights the potential of Differential Evolution as an optimization technique for imbalanced learning, outperforming traditional resampling approaches in cost-sensitive classification tasks.
 
 \chapter{Methodology}
 
@@ -387,19 +390,15 @@ In the context of hate speech detection, the SVM algorithm aims to segregate hat
 AdaBoost is a type of ensemble learning technique that operates iteratively, capitalizing on the errors of weak classifiers and amplifies their capabilities to mold them into potent classifiers. The essence of AdaBoost lies in its ability to combine several weak classifiers, enhancing the ones that showcase superior performance through higher weight assignments.    
 
 AdaBoost refers to a particular method of training a boosted classifier. A boosted classifier is a classifier of the form
-
-\[
+\begin{equation}
 F_T(x) = \sum_{t=1}^{T} f_t(x)
-\]
-
+\end{equation}
 where each \( f_t \) is a weak learner that takes an object \( x \) as input and returns a value indicating the class of the object. For example, in the two-class problem, the sign of the weak learner's output identifies the predicted object class and the absolute value gives the confidence in that classification.
 
 Each weak learner produces an output hypothesis \( h \) which fixes a prediction \( h(x_i) \) for each sample in the training set. At each iteration \( t \), a weak learner is selected and assigned a coefficient \( \alpha_t \) such that the total training error \( E_t \) of the resulting \( t \)-stage boosted classifier is minimized.
-
-\[
+\begin{equation}
 E_t = \sum_{i} E \big[ F_{t-1}(x_i) + \alpha_t h(x_i) \big]
-\]
-
+\end{equation}
 Here \( F_{t-1}(x) \) is the boosted classifier that has been built up to the previous stage of training and 
 \( f_t(x) = \alpha_t h(x) \) is the weak learner that is being considered for addition to the final classifier.
 
@@ -533,12 +532,13 @@ Cosine loss weight () = 1\\
 
 \subsection{DistilBERT Architecture}
 DistilBERT reduces the number of layers to 6 from 12 in the original BERT architecture, resulting in a model with 66M parameters. This reduction leads to a 60\% increase in inference speed while maintaining approximately 97\% of BERT's language understanding capabilities.\\
-
-
-
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{images/distil.png}
+\caption{Diagram of BERT BASE and DistilBERT model architecture}
+\textit{Source: https://link.springer.com/article/10.1007/s40747-024-01595-w}
+\end{figure}
 In the context of developing efficient natural language processing models for the Nepali language, DistilBERT emerges as a compelling choice due to its reduced model size and computational efficiency. A study titled "Nepali Encoder Transformers: An Analysis of Auto Encoding Transformer Language Models for Nepali Text Classification" highlights the advantages of using smaller transformer models like DistilBERT. The research emphasizes that such models are particularly beneficial for low-resource languages like Nepali, where computational resources may be limited. By employing DistilBERT, which maintains a balance between performance and efficiency, it becomes feasible to develop robust language models without the need for extensive computational infrastructure.
-
-
 \subsubsection{Architecture Modification}
 DistilBERT reduces the number of layers in the original BERT architecture by half, resulting in a model with 40\% fewer parameters. This reduction leads to a 60\% increase in inference speed while maintaining approximately 97\% of BERT's language understanding capabilities. The streamlined architecture makes DistilBERT more suitable for deployment in resource-constrained environments.
 In the context of developing efficient natural language processing models for the Nepali language, DistilBERT emerges as a compelling choice due to its reduced model size and computational efficiency. A study titled "Nepali Encoder Transformers: An Analysis of Auto Encoding Transformer Language Models for Nepali Text Classification" highlights the advantages of using smaller transformer models like DistilBERT. The research emphasizes that such models are particularly beneficial for low-resource languages like Nepali, where computational resources may be limited. By employing DistilBERT, which maintains a balance between performance and efficiency, it becomes feasible to develop robust language models without the need for extensive computational infrastructure.

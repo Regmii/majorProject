@@ -17,49 +17,49 @@
 \contentsline {subsection}{\numberline {1.6.4}Schedule Feasibility}{4}{subsection.1.6.4}%
 \contentsline {chapter}{\numberline {2}Litreature Review}{6}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Related Work}{6}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Methodology}{8}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Working Mechanism}{8}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Data Collection}{8}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Data Preprocessing}{12}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Machine Learning Techniques}{13}{subsection.3.1.3}%
-\contentsline {subsubsection}{Support Vector Machine(SVM)}{13}{subsection.3.1.3}%
-\contentsline {subsubsection}{AdaBoost}{14}{figure.caption.14}%
-\contentsline {subsection}{\numberline {3.1.4}Word2Vec}{15}{subsection.3.1.4}%
-\contentsline {subsubsection}{Working Mechanism of Word2Vec}{15}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}TF-IDF Formula}{16}{subsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.1.6}NepBERTa and Its Working Mechanism}{17}{subsection.3.1.6}%
-\contentsline {subsubsection}{Steps for NepBERTa}{17}{subsection.3.1.6}%
-\contentsline {subsection}{\numberline {3.1.7}DistilBERT and its Key Methodologies}{18}{subsection.3.1.7}%
-\contentsline {subsubsection}{Knowledge Distillation}{19}{subsection.3.1.7}%
-\contentsline {subsubsection}{Loss Functions in DistilBERT}{19}{subsection.3.1.7}%
-\contentsline {subsection}{\numberline {3.1.8}DistilBERT Architecture}{20}{subsection.3.1.8}%
-\contentsline {subsubsection}{Architecture Modification}{21}{subsection.3.1.8}%
-\contentsline {subsubsection}{Condensed Nearest Neighbour (CNN)}{22}{subsection.3.1.8}%
-\contentsline {subsubsection}{Neighbourhood Cleaning Rule (NCR)}{22}{subsection.3.1.8}%
-\contentsline {subsubsection}{Random Under Sampler}{22}{subsection.3.1.8}%
-\contentsline {subsubsection}{SMOTE (Synthetic Minority Oversampling Technique)}{23}{subsection.3.1.8}%
-\contentsline {subsubsection}{ADASYN (Adaptive Synthetic Sampling)}{23}{subsection.3.1.8}%
-\contentsline {section}{\numberline {3.2}SONAR(Sentence-Level Multimodal and Language-Agnostic Representations )}{23}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Why over other models }{24}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}How SONAR Works}{24}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Sentence Tokenization}{24}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Encoding Function}{24}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Training Objectives}{24}{subsection.3.2.5}%
-\contentsline {section}{\numberline {3.3}SONAR Architecture}{25}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Multilingual Text Sentence Embedding Space}{25}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Speech Sentence Embedding Space (Teacher-Student Approach)}{25}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Differential Evolution}{25}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Parameters of Differential Evolution}{26}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Development Model}{27}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Requirement Specification}{28}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Development and Implementation}{28}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Verification and Validation}{29}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Increments}{29}{subsection.3.5.4}%
-\contentsline {section}{\numberline {3.6}Evaluation Criteria}{29}{section.3.6}%
-\contentsline {section}{\numberline {3.7}System Diagrams}{30}{section.3.7}%
-\contentsline {subsubsection}{Usecase Diagram}{30}{section.3.7}%
-\contentsline {subsubsection}{DFD}{31}{figure.caption.18}%
-\contentsline {chapter}{\numberline {4}Result and Discussions}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Works Completed}{32}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Works Remaining}{32}{section.4.2}%
-\contentsline {chapter}{References}{35}{chapter*.21}%
+\contentsline {chapter}{\numberline {3}Methodology}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Working Mechanism}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Data Collection}{9}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Data Preprocessing}{13}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Machine Learning Techniques}{14}{subsection.3.1.3}%
+\contentsline {subsubsection}{Support Vector Machine(SVM)}{14}{subsection.3.1.3}%
+\contentsline {subsubsection}{AdaBoost}{15}{figure.caption.14}%
+\contentsline {subsection}{\numberline {3.1.4}Word2Vec}{16}{subsection.3.1.4}%
+\contentsline {subsubsection}{Working Mechanism of Word2Vec}{16}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}TF-IDF Formula}{17}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}NepBERTa and Its Working Mechanism}{18}{subsection.3.1.6}%
+\contentsline {subsubsection}{Steps for NepBERTa}{18}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}DistilBERT and its Key Methodologies}{19}{subsection.3.1.7}%
+\contentsline {subsubsection}{Knowledge Distillation}{20}{subsection.3.1.7}%
+\contentsline {subsubsection}{Loss Functions in DistilBERT}{20}{subsection.3.1.7}%
+\contentsline {subsection}{\numberline {3.1.8}DistilBERT Architecture}{21}{subsection.3.1.8}%
+\contentsline {subsubsection}{Architecture Modification}{22}{figure.caption.16}%
+\contentsline {subsubsection}{Condensed Nearest Neighbour (CNN)}{23}{figure.caption.16}%
+\contentsline {subsubsection}{Neighbourhood Cleaning Rule (NCR)}{23}{figure.caption.16}%
+\contentsline {subsubsection}{Random Under Sampler}{23}{figure.caption.16}%
+\contentsline {subsubsection}{SMOTE (Synthetic Minority Oversampling Technique)}{24}{figure.caption.16}%
+\contentsline {subsubsection}{ADASYN (Adaptive Synthetic Sampling)}{24}{figure.caption.16}%
+\contentsline {section}{\numberline {3.2}SONAR(Sentence-Level Multimodal and Language-Agnostic Representations )}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Why over other models }{25}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}How SONAR Works}{25}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Sentence Tokenization}{25}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Encoding Function}{25}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Training Objectives}{25}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}SONAR Architecture}{26}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Multilingual Text Sentence Embedding Space}{26}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Speech Sentence Embedding Space (Teacher-Student Approach)}{26}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Differential Evolution}{26}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Parameters of Differential Evolution}{27}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}Development Model}{28}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Requirement Specification}{29}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Development and Implementation}{29}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Verification and Validation}{30}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Increments}{30}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Evaluation Criteria}{30}{section.3.6}%
+\contentsline {section}{\numberline {3.7}System Diagrams}{31}{section.3.7}%
+\contentsline {subsubsection}{Usecase Diagram}{31}{section.3.7}%
+\contentsline {subsubsection}{DFD}{32}{figure.caption.19}%
+\contentsline {chapter}{\numberline {4}Result and Discussions}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Works Completed}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Works Remaining}{33}{section.4.2}%
+\contentsline {chapter}{References}{36}{chapter*.22}%

@@ -17,45 +17,45 @@ Warning--I didn't find a database entry for "goyal_2021"
 Warning--empty journal in suwal2023nepali
 
 Done.
-You've used 10 entries,
+You've used 12 entries,
             4087 wiz_defined-function locations,
-            876 strings with 9523 characters,
-and the built_in function-call counts, 7174 in all, are:
-= -- 538
-> -- 170
-< -- 50
-+ -- 93
-- -- 30
-* -- 333
-:= -- 1028
-add.period$ -- 21
-call.type$ -- 10
-change.case$ -- 9
-chr.to.int$ -- 126
-cite$ -- 11
-duplicate$ -- 523
-empty$ -- 637
-format.name$ -- 37
-if$ -- 1681
+            891 strings with 10204 characters,
+and the built_in function-call counts, 9073 in all, are:
+= -- 678
+> -- 228
+< -- 63
++ -- 122
+- -- 41
+* -- 431
+:= -- 1297
+add.period$ -- 26
+call.type$ -- 12
+change.case$ -- 13
+chr.to.int$ -- 159
+cite$ -- 13
+duplicate$ -- 656
+empty$ -- 804
+format.name$ -- 51
+if$ -- 2131
 int.to.chr$ -- 0
-int.to.str$ -- 10
-missing$ -- 93
-newline$ -- 57
-num.names$ -- 9
-pop$ -- 255
+int.to.str$ -- 12
+missing$ -- 120
+newline$ -- 65
+num.names$ -- 13
+pop$ -- 325
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 558
+skip$ -- 695
 stack$ -- 0
-substring$ -- 319
-swap$ -- 396
-text.length$ -- 8
+substring$ -- 398
+swap$ -- 502
+text.length$ -- 10
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 10
+type$ -- 12
 warning$ -- 1
-while$ -- 30
-width$ -- 12
-write$ -- 111
+while$ -- 40
+width$ -- 14
+write$ -- 133
 (There were 3 warnings)
