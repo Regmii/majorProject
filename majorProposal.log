@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.20)  15 FEB 2025 16:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.20)  15 FEB 2025 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -722,43 +722,53 @@ Overfull \hbox (5.70692pt too wide) in paragraph at lines 570--571
 ansformer-based encoder-
  []
 
-[25] [26] [27]
-<incremental.png, id=508, 295.8252pt x 159.4758pt>
-File: incremental.png Graphic file (type png)
-<use incremental.png>
-Package pdftex.def Info: incremental.png  used on input line 654.
+[25] [26]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 6
+20.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) [27]
+[28]
+<images/incremental.png, id=515, 295.8252pt x 159.4758pt>
+File: images/incremental.png Graphic file (type png)
+<use images/incremental.png>
+Package pdftex.def Info: images/incremental.png  used on input line 681.
 (pdftex.def)             Requested size: 384.5727pt x 207.3185pt.
- [28] [29 <./incremental.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 672--688
+ [29 <./images/incremental.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 699--715
 
  []
 
 [30]
-<images/usecase.png, id=530, 815.29594pt x 688.82344pt>
+<images/usecase.png, id=531, 815.29594pt x 688.82344pt>
 File: images/usecase.png Graphic file (type png)
 <use images/usecase.png>
-Package pdftex.def Info: images/usecase.png  used on input line 693.
+Package pdftex.def Info: images/usecase.png  used on input line 720.
 (pdftex.def)             Requested size: 407.64697pt x 344.41087pt.
- [31 <./images/usecase.png>]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31]
 <images/dfd.png, id=536, 1990.43625pt x 454.69875pt>
 File: images/dfd.png Graphic file (type png)
 <use images/dfd.png>
-Package pdftex.def Info: images/dfd.png  used on input line 700.
+Package pdftex.def Info: images/dfd.png  used on input line 727.
 (pdftex.def)             Requested size: 418.00395pt x 95.48955pt.
 
-Overfull \hbox (1.17107pt too wide) in paragraph at lines 700--701
+Overfull \hbox (1.17107pt too wide) in paragraph at lines 727--728
  [][] 
  []
 
-[32 <./images/dfd.png>]
+[32 <./images/usecase.png> <./images/dfd.png>]
 Chapter 4.
-<images/confusion.png, id=542, 450.9347pt x 386.94562pt>
+<images/confusion.png, id=543, 450.9347pt x 386.94562pt>
 File: images/confusion.png Graphic file (type png)
 <use images/confusion.png>
-Package pdftex.def Info: images/confusion.png  used on input line 714.
+Package pdftex.def Info: images/confusion.png  used on input line 741.
 (pdftex.def)             Requested size: 225.4668pt x 193.47234pt.
 
-Overfull \hbox (0.83482pt too wide) in paragraph at lines 719--720
+Overfull \hbox (0.83482pt too wide) in paragraph at lines 746--747
 \OT1/ptm/m/n/12 cap-tur-ing the se-man-tics within the classes. Other en-coders
  such as Fast-text, and GLOVE
  []
@@ -775,7 +785,7 @@ online-[]gendered-[]violence-[]against-[]women/$[]
 
 ])
 
-LaTeX Warning: Citation `goyal_2021' undefined on input line 781.
+LaTeX Warning: Citation `goyal_2021' undefined on input line 808.
 
 [36] (./majorProposal.aux)
 
@@ -785,11 +795,11 @@ Package rerunfilecheck Info: File `majorProposal.out' has not changed.
 (rerunfilecheck)             Checksum: 4133F2C21988E1A820AF5E20FCF7B796;8330.
  ) 
 Here is how much of TeX's memory you used:
- 16413 strings out of 480204
- 303415 string characters out of 5895010
+ 16451 strings out of 480204
+ 303995 string characters out of 5895010
  585211 words of memory out of 5000000
- 33990 multiletter control sequences out of 15000+600000
- 491613 words of font info for 72 fonts, out of 8000000 for 9000
+ 34023 multiletter control sequences out of 15000+600000
+ 492128 words of font info for 74 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  75i,11n,82p,1403b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -801,13 +811,14 @@ public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on majorProposal.pdf (43 pages, 1273159 bytes).
+></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmri8a.pfb>
+Output written on majorProposal.pdf (43 pages, 1283413 bytes).
 PDF statistics:
- 654 PDF objects out of 1000 (max. 8388607)
- 552 compressed objects within 6 object streams
+ 659 PDF objects out of 1000 (max. 8388607)
+ 555 compressed objects within 6 object streams
  150 named destinations out of 1000 (max. 500000)
  471 words of extra memory for PDF output out of 10000 (max. 10000000)
 
