@@ -49,17 +49,20 @@
 \contentsline {subsection}{\numberline {3.3.1}Multilingual Text Sentence Embedding Space}{26}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Speech Sentence Embedding Space (Teacher-Student Approach)}{26}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Differential Evolution}{26}{section.3.4}%
+\contentsline {subsubsection}{Mutation}{27}{section.3.4}%
+\contentsline {subsubsection}{Crossover}{27}{equation.3.4.11}%
+\contentsline {subsubsection}{Selection}{28}{equation.3.4.12}%
 \contentsline {subsection}{\numberline {3.4.1}Parameters of Differential Evolution}{28}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Development Model}{29}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Development Model}{30}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Requirement Specification}{30}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Development and Implementation}{30}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Verification and Validation}{30}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Increments}{30}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.3}Verification and Validation}{31}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Increments}{31}{subsection.3.5.4}%
 \contentsline {section}{\numberline {3.6}Evaluation Criteria}{31}{section.3.6}%
-\contentsline {section}{\numberline {3.7}System Diagrams}{31}{section.3.7}%
-\contentsline {subsubsection}{Usecase Diagram}{31}{section.3.7}%
-\contentsline {subsubsection}{DFD}{32}{figure.caption.19}%
-\contentsline {chapter}{\numberline {4}Result and Discussions}{33}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Works Completed}{33}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Works Remaining}{33}{section.4.2}%
-\contentsline {chapter}{References}{36}{chapter*.22}%
+\contentsline {section}{\numberline {3.7}System Diagrams}{32}{section.3.7}%
+\contentsline {subsubsection}{Usecase Diagram}{32}{section.3.7}%
+\contentsline {subsubsection}{DFD}{33}{figure.caption.19}%
+\contentsline {chapter}{\numberline {4}Result and Discussions}{34}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Works Completed}{34}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Works Remaining}{34}{section.4.2}%
+\contentsline {chapter}{References}{37}{chapter*.22}%

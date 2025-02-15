@@ -77,6 +77,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{array}
 
+
+
 %\renewcommand{\thefigure}{\thesection.\arabic{figure}}
 
 %The Document
@@ -612,14 +614,12 @@ SONAR follows a two-step training process:
 
 \section{Differential Evolution}
 Differential evolution is a stochastic population-based method that is useful for global optimization problems. At each pass through the population, the algorithm mutates each candidate solution by mixing with other candidate solutions to create a trial candidate. There are several strategies for creating trial candidates, which suit some problems more than others.\\
-The 'best1bin' strategy is a good starting point binomial distribution. In this strategy, two members of the population are randomly chosen. Their difference is used to mutate the best member (the ‘best’ in ‘best1bin’), $x_0$, so far:
-\begin{equation}
-    b' = x_0 + F \cdot (x_{r0} - x_{r1})
-\end{equation}
-where, $F$ is the \textit{mutation} parameter, \(x_0\) is the base vector, \(x_{r0}\) and \(x_{r1}\) are two randomly selected vectors from the population. A trial vector is then constructed. Starting with a randomly chosen $i$th parameter, the trial is sequentially filled (in modulo) with parameters from $b'$ or the original candidate. The choice of whether to use $b'$ or the original candidate is made with a binomial distribution (the ‘bin’ in ‘best1bin’) - a random number in $[0,1]$ is generated. If this number is less than the \textit{recombination} constant, then the parameter is loaded from $b'$, otherwise, it is loaded from the original candidate. The final parameter is always loaded from $b'$.\\
+The 'best1bin' strategy is a good starting point binomial distribution.
+\subsubsection{Mutation}
 In \texttt{best/1/bin}, the mutant vector \( v_i \) is created using the best individual in the population instead of a randomly selected one:
-$
-v_i = x_{best} + F \cdot (x_r - x_s)$
+\begin{equation}
+v_i = x_{best} + F \cdot (x_r - x_s)
+\end{equation}
 where:
 \begin{itemize}
     \item \( x_{best} \) = the best solution (individual) in the current population.
@@ -627,8 +627,10 @@ where:
     \item \( F \) = \textbf{scaling factor}, a hyperparameter that controls the mutation step size.
 \end{itemize}
 
+\subsubsection{Crossover}
+The choice of whether to use $b'$ or the original candidate is made with a binomial distribution (the ‘bin’ in ‘best1bin’) - a random number in $[0,1]$ is generated. If this number is less than the \textit{recombination} constant, then the parameter is loaded from $b'$, otherwise, it is loaded from the original candidate. The final parameter is always loaded from $b'$.\\
 Once the \textbf{mutant vector} \( v_i \) is generated, the \textbf{binomial crossover} process creates the trial vector \( u_i \):
-\[
+\begin{equation}
 u_{i,j} =
 \left\{
 \begin{array}{l}
@@ -636,7 +638,7 @@ u_{i,j} =
     x_{i,j}, {\quad otherwise.}
 \end{array}
 \right.
-\]
+\end{equation}
 where:
 \begin{itemize}
     \item \( CR \) = crossover probability.
@@ -644,6 +646,27 @@ where:
     \item \( j_{\text{rand}} \) ensures at least one gene is taken from \( v_i \), preventing \( u_i = x_i \).
 \end{itemize}
 
+\subsubsection{Selection}
+The trial vector \(u_i\) competes with the original solution \(x_i\), and the better one (based on fitness function) moves to the next generation.
+\begin{equation}
+x_i' =
+\left\{
+\begin{array}{l}
+    u_i, {if} \quad f(u_i) \leq f(x_i) \\[5pt]
+    x_i, {otherwise.}
+\end{array}
+\right.
+\end{equation}
+where \(f(x)\) is the objective function (lower is better in minimization problems).
+If we are minimizing a function, and:
+\begin{equation}
+f(x) = x_1^2 + x_2^2
+\end{equation}
+\begin{itemize}
+    \item \( f(2,3) = 2^2 + 3^2 = 13 \)
+    \item \( f(2,2.5) = 2^2 + 2.5^2 = 10.25 \)
+\end{itemize}
+Since \(10.25 < 13\), we keep \([2, 2.5]\) as the new solution.\\
 Once the trial candidate is built, its fitness is assessed. If the trial is better than the original candidate, then it takes its place. If it is also better than the best overall candidate, it also replaces that.
 
 \subsection{Parameters of Differential Evolution}
